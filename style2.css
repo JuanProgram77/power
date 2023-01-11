@@ -1,0 +1,139 @@
+@charset"UTF-8";
+
+@font-face {
+    font-family: 'monta';
+    src: url('fontes/monta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0: #EF2D56;
+    --cor-degrade: #309C74, #9EE788;
+    --cor-menu: #CCF7C4;
+    --cor-body: #EF2D56, #EF2D56;
+    --cor-degrade-titulos: #3C896D, #87FF65, #9FFF85, #CFFFC2, #EFFFEB, #FFFFFF;
+
+    --fonte-p: Helvetica, sans-serif;
+    --fonte-títulos: 'monta', cursive;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: var(--fonte-p);
+    background-image: linear-gradient(to right, var(--cor-body));
+    text-align: justify;
+}
+
+.principal {
+    text-align: center;
+    text-indent:0px;
+}
+
+header > p{
+    text-align:justify;
+}
+
+h1 {
+    font: bolder normal 60px var(--fonte-títulos);
+    text-shadow: 11px 8px 50px #00000090;
+}
+
+main {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin:auto;
+}
+
+.menu {
+    text-decoration: none;
+    color: var(--cor-menu);
+    font-size: 10px;
+    padding: 10px;
+    transition-duration: 0.7s;
+}
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav > .menu:hover {
+    background-color: lightgreen;
+    border-radius:5px;
+}
+
+header {
+    background-image: linear-gradient(60deg, var(--cor-degrade));
+    color: white;
+    box-shadow: -3px 8px 24px #000000d6;
+    padding-top: 20px;
+}
+
+p {
+    text-indent: 30px;
+    padding:10px;
+    margin: 10px 0px;
+    line-height:2em;
+}
+
+h3, h2 {
+    font: bold normal 28px var(--fonte-títulos);
+    background-image: linear-gradient(to right, var(--cor-degrade-titulos));
+    color: #133E2F;
+    text-shadow: 11px 8px 30px #00000061;
+    padding-left: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    background-image: linear-gradient(60deg, var(--cor-degrade));
+}
+
+#rodape {
+    font: normal normal 10px var(--fonte-p);
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+div {
+    border: 4px solid #8F8F8F;
+    background-image: linear-gradient(to right, var(--cor-degrade-titulos));
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 400px;
+    margin:auto;
+}
+
+div > ul {
+    columns: 2;
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+section{
+    padding-bottom: 44%;
+    position: relative;
+}
+
+    section > iframe {
+        position: absolute;
+        top: 3%;
+        left: 13%;
+        width: 73%;
+        height: 94%;
+    }
